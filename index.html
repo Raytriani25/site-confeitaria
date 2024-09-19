@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu E-commerce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu E-commerce</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a id="product" href="#order" title="Ir para a seção meus pedidos">Meus Pedidos</a>
+                    </li>
+                    <li>
+                        <a id="contact" href="./contact.html" title="Ir para a seção de contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="product">
+        <div class="container">
+            <img class="store-front" src="./imagens/confeitaria1.jpg" alt="Logo da empresa">
+            <div>
+                <h2>Sobre Nós</h2>
+                <p>
+                    A Delícias da Vovó é uma confeitaria artesanal especializada em bolos e doces caseiros, com receitas passadas de geração em geração. <br /> Localizada no coração da cidade, a empresa oferece produtos frescos e feitos com ingredientes selecionados, garantindo sabor e qualidade. <br /> Entre suas especialidades estão os bolos decorados para eventos e doces tradicionais, como brigadeiros e quindins. <br /> Com um ambiente acolhedor, a confeitaria também dispõe de um espaço para degustação e eventos especiais. <br /> A equipe dedicada e apaixonada busca transformar cada pedido em uma experiência única e saborosa.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="container">
+            <h2 class="pedido">Fazer Pedido</h2>
+            <div class="order-methods">
+                <form>
+                    <label for="product">Copo da Felicidade</label> <br />
+                        <select id="product" name="produto" required>
+                            <option value="grande">Grande R$23,00</option>
+                            <option value="pequeno">Pequeno R$13,00</option>
+                        </select> <br />
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1" value="1" required> <br />
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes" rows="4"></textarea> <br />
+                        <button id="submit" type="submit">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Game Shop - Todos os direitos reservados 2024
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
